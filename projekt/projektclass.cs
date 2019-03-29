@@ -12,11 +12,11 @@ namespace projekt
 {
     public partial class projektclass : Form
     {
-        static private string[] url = new string[] {"http://www.google.com", "http://www.facebook.se", "http://www.samarbeta.se", "http://www.w3schools.se", "file://webbprojekt/smorgasbordet" } ;
+        static private string[] url = new string[] {"http://www.google.com", "http://www.facebook.com", "http://www.samarbeta.se", "http://www.w3schools.se", "file://webbprojekt/smorgasbordet" } ;
 
         public projektclass()
         {
-            InitializeComponent(); //wwbvwrbv
+            InitializeComponent(); 
         }
 
         private void webBrowser1_DocumentCompleted(object sender, WebBrowserDocumentCompletedEventArgs e)
@@ -38,21 +38,14 @@ namespace projekt
 
         }
 
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        private void webBrowser2_DocumentCompleted(object sender, WebBrowserDocumentCompletedEventArgs e)
         {
-            string iteamText = comboBox1.SelectedItem.ToString();
-            MessageBox.Show(iteamText);
-            this.webBrowser1.Navigate(url[comboBox1.SelectedIndex]);
-
-
-
+            string iteamText = comboBox2.SelectedItem.ToString();
         }
 
-        private void textBox1_DoubleClick(object sender, EventArgs e)
+        private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
         {
-            this.webBrowser1.Navigate(textBox1.Text);
-
+            this.webBrowser2.Navigate(url[comboBox2.SelectedIndex]);
         }
-
     }
 }
