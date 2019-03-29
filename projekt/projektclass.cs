@@ -12,6 +12,11 @@ namespace projekt
 {
     public partial class projektclass : Form
     {
+
+        List<nameandpass> User = new List<nameandpass>();
+     
+
+
         static private string[] url = new string[] {"http://www.google.com", "http://www.facebook.com", "http://www.samarbeta.se", "http://www.w3schools.se", "file://webbprojekt/smorgasbordet" } ;
 
         public projektclass()
