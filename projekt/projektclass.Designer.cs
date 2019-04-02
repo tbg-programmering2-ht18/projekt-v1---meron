@@ -30,6 +30,7 @@
         {
             this.webBrowser2 = new System.Windows.Forms.WebBrowser();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.SuspendLayout();
             // 
             // webBrowser2
@@ -37,10 +38,10 @@
             this.webBrowser2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.webBrowser2.Location = new System.Drawing.Point(3, 62);
+            this.webBrowser2.Location = new System.Drawing.Point(1, 46);
             this.webBrowser2.MinimumSize = new System.Drawing.Size(20, 20);
             this.webBrowser2.Name = "webBrowser2";
-            this.webBrowser2.Size = new System.Drawing.Size(832, 429);
+            this.webBrowser2.Size = new System.Drawing.Size(885, 429);
             this.webBrowser2.TabIndex = 0;
             this.webBrowser2.DocumentCompleted += new System.Windows.Forms.WebBrowserDocumentCompletedEventHandler(this.webBrowser2_DocumentCompleted);
             // 
@@ -58,9 +59,19 @@
             this.comboBox2.TabIndex = 2;
             this.comboBox2.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedIndexChanged);
             // 
+            // richTextBox1
+            // 
+            this.richTextBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.richTextBox1.Location = new System.Drawing.Point(207, 517);
+            this.richTextBox1.Name = "richTextBox1";
+            this.richTextBox1.Size = new System.Drawing.Size(489, 107);
+            this.richTextBox1.TabIndex = 3;
+            this.richTextBox1.Text = "";
+            // 
             // projektclass
             // 
-            this.ClientSize = new System.Drawing.Size(836, 556);
+            this.ClientSize = new System.Drawing.Size(889, 607);
+            this.Controls.Add(this.richTextBox1);
             this.Controls.Add(this.comboBox2);
             this.Controls.Add(this.webBrowser2);
             this.Name = "projektclass";
@@ -76,5 +87,6 @@
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.WebBrowser webBrowser2;
         private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.RichTextBox richTextBox1;
     }
 }

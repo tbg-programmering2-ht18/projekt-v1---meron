@@ -17,7 +17,9 @@ namespace projekt
      
 
 
-        static private string[] url = new string[] {"http://www.google.com", "http://www.facebook.com", "http://www.samarbeta.se", "http://www.w3schools.se", "file://webbprojekt/smorgasbordet" } ;
+        static private string[] url = new string[] {"http://www.google.com", "https://www.facebook.com/", "http://www.samarbeta.se", "http://www.w3schools.com", "" } ;
+        static private string[] urlBeskrivning = new string[] { "hhhhhhhh", "https://www.facebook.com/", "http://www.samarbeta.se", "http://www.w3schools.com", "" };
+
 
         public projektclass()
         {

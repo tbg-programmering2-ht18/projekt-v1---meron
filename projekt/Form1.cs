@@ -31,10 +31,23 @@ namespace projekt
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            if (frmuser.ShowDialog() == DialogResult.OK)
+            if (edtUsername.Text == "user")
             {
-                edtPassword.Text = "";
-                this.Show();
+                if (edtPassword.Text == "pass")
+                {
+                    new projektclass().Show();
+                    this.Hide();
+                }
+                
+                else
+                {
+                    MessageBox.Show("Error: please enter ther correct information");
+                }
+            }
+
+            else
+            {
+                MessageBox.Show("Error: please enter ther correct information");
             }
         }
 
