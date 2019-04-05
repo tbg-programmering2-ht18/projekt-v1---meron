@@ -31,9 +31,9 @@ namespace projekt
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            if (edtUsername.Text == "user")
+            if (edtUsername.Text == "admin")
             {
-                if (edtPassword.Text == "pass")
+                if (edtPassword.Text == "admin")
                 {
                     new projektclass().Show();
                     this.Hide();

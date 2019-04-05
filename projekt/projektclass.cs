@@ -17,8 +17,13 @@ namespace projekt
      
 
 
-        static private string[] url = new string[] {"http://www.google.com", "https://www.facebook.com/", "http://www.samarbeta.se", "http://www.w3schools.com", "" } ;
-        static private string[] urlBeskrivning = new string[] { "hhhhhhhh", "https://www.facebook.com/", "http://www.samarbeta.se", "http://www.w3schools.com", "" };
+        static private string[] url = new string[] {"http://www.google.com", "https://www.facebook.com/", "http://www.w3schools.com", "http://www.samarbeta.se/", "" } ;
+        static private string[] urlBeskrivning = new string[] { "Google är ett multinationellt internetföretag inriktat på Internetrelaterade produkter och tjänster som omfattar annonsering på nätet, en sökmotor",
+            "Facebook är ett socialt medium eller en social nätverkstjänst som grundades i februari 2004 och i juni 2017 hade Facebook mer än 2 miljarder månatligt aktiva användare. Användarna kan skapa en personlig profil, lägga till andra användare som vänner och utbyta meddelanden.",
+            "W3Schools är en pedagogisk webbplats för att lära sig hur man gör webbsidor på nätet. Innehållet innehåller handledning och referenser relaterade till HTML, CSS, JavaScript, , PHP, Python, och Java mm.",
+            "x",
+            ""
+        };
 
 
         public projektclass()
@@ -53,6 +58,12 @@ namespace projekt
         private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
         {
             this.webBrowser2.Navigate(url[comboBox2.SelectedIndex]);
+            richTextBox1.Text = urlBeskrivning[comboBox2.SelectedIndex];
+        }
+
+        private void richTextBox1_TextChanged_1(object sender, EventArgs e)
+        {
+
         }
     }
 }
