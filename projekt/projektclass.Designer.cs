@@ -35,6 +35,8 @@
             // 
             // webBrowser2
             // 
+            this.webBrowser2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.webBrowser2.Location = new System.Drawing.Point(12, 30);
             this.webBrowser2.MinimumSize = new System.Drawing.Size(20, 20);
             this.webBrowser2.Name = "webBrowser2";
@@ -44,25 +46,28 @@
             // 
             // comboBox2
             // 
+            this.comboBox2.AccessibleName = "";
             this.comboBox2.FormattingEnabled = true;
             this.comboBox2.Items.AddRange(new object[] {
             "Webb-sida (Google).",
             "Webb-sida (Facebook).",
-            "Webb-sida (Samarbeta).",
-            "Webb-sida (W3schools)."});
+            "Webb-sida (W3schools).",
+            "Webb-sida (Youtube).",
+            ""});
             this.comboBox2.Location = new System.Drawing.Point(174, 1);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(483, 28);
             this.comboBox2.TabIndex = 2;
+            this.comboBox2.Text = "Välj webbsida. ";
             this.comboBox2.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedIndexChanged);
             // 
             // richTextBox1
             // 
             this.richTextBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.richTextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.richTextBox1.Location = new System.Drawing.Point(174, 472);
+            this.richTextBox1.Location = new System.Drawing.Point(174, 481);
             this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(501, 123);
+            this.richTextBox1.Size = new System.Drawing.Size(501, 114);
             this.richTextBox1.TabIndex = 3;
             this.richTextBox1.Text = "";
             this.richTextBox1.TextChanged += new System.EventHandler(this.richTextBox1_TextChanged_1);

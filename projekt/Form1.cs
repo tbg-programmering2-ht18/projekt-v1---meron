@@ -12,8 +12,6 @@ namespace projekt
 {
     public partial class Form1 : Form
     {
-        projektclass frmuser = new projektclass();
-
         public Form1()
         {
             InitializeComponent();
@@ -28,7 +26,7 @@ namespace projekt
         {
 
         }
-
+        //Inloggning system med användarnamn [Admin] och Lösenord [Admin]
         private void btnLogin_Click(object sender, EventArgs e)
         {
             if (edtUsername.Text == "admin")
@@ -38,20 +36,28 @@ namespace projekt
                     new projektclass().Show();
                     this.Hide();
                 }
-                
+
+                //meddelande man få om Inloggning information är fel
                 else
                 {
-                    MessageBox.Show("Error: please enter ther correct information");
+                    MessageBox.Show("Fel!: Var snäll och  fyll in rätt information!");
                 }
             }
 
+
+            //meddelande man få om Inloggning information är fel med ett liten ruta
             else
             {
-                MessageBox.Show("Error: please enter ther correct information");
+                MessageBox.Show("Fel!: Var snäll och  fyll in rätt information!");
             }
         }
 
         private void lblPassword_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
         {
 
         }
